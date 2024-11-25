@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex8</title>
+</head>
+<body>
+    <h2 class="titulo">Exercicio 8 JavaScript</h2>
+    <button onclick="min()">Aperta ai!!!</button>
+    <script>
+        function min(){
+            let num1 = parseInt(prompt("Digite o primeiro número:"))
+            let num2 = parseInt(prompt("Digite o segundo numero:"))
+            let num3 = parseInt(prompt("Digite o terceiro numero:"))
+            let aux = num1;
+
+            if(num2 > num1){
+            aux=num2;
+            num2=num1;
+            num1=aux;
+            }
+
+            if(num3 > num1){
+            aux=num3;
+            num3=num1;
+            num1=aux;
+            }
+
+            if(num3 > num2){
+            aux=num3;
+            num3=num2;
+            num2=aux;
+            }
+        window.alert(num1+","+num2+","+num3);
+        }
+        
+    </script>
+    
+</body>
+</html>

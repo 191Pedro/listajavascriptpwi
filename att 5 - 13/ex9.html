@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex9</title>
+</head>
+<body>
+    <h2 class="titulo">Exercicio 9 JavaScript</h2>
+    <button onclick="min()">Aperta ai!!!</button>
+    <script>
+        function min(){
+            let A = parseFloat(prompt("Digite seu peso"))
+            let B = parseFloat(prompt("Digite sua altura"))
+            let IMC = A / (B*B)
+            if (IMC > 18.5 && IMC < 18.5){
+                window.alert("Abaixo do peso")
+            }
+            if (IMC >= 18.6 && IMC <= 24.9){
+                window.alert("Peso ideal(parabéns)")
+            }
+            if (IMC >= 25 && IMC <= 29.9){
+                window.alert("Levemente acima do peso")
+            }
+            if (IMC >= 30 && IMC <= 34.9){
+                window.alert("Obesidade Grau I")
+            }
+            if (IMC >= 40){
+                window.alert("Obesidade Grau III(Mórbida)")
+            }
+        }
+    </script>
+    
+</body>
+</html>

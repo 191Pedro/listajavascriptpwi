@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex12</title>
+</head>
+<body>
+    <h2 class="titulo">Exercicio 12 JavaScript</h2>
+    <button onclick="min()">Aperta ai!!!</button>
+    <script>
+        function min(){
+            let A = parseFloat(prompt("Digite o valor do produto"))
+            let B = parseInt(prompt("ESCOLHA A FORMA DE PAGAMENTO. 1 - À Vista em Dinheiro ou Pix. 2 - À Vista no cartão de crédito. 3 - Parcelado no cartão em duas vezes. 4 - Parcelado no cartão em três vezes ou mais"))
+            let C = A * 0.15
+            let D = A - C
+            let E = A * 0.10
+            let F = A - E
+            let G = A + E
+            if(B == 1){
+                window.alert(`O preço do produto ficará: ${D}`)
+            }
+            if(B == 2){
+                window.alert(`O preço do produto ficará: ${F}`)
+            }
+            if(B == 3){
+                window.alert(`O preço do produto ficará: ${A}`)
+            }
+            if(B==4){
+                window.alert(`O preço do produto ficará: ${G}`)
+            }
+        }
+    </script>
+    
+</body>
+</html>

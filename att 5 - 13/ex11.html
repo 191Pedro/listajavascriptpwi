@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex11</title>
+</head>
+<body>
+    <h2 class="titulo">Exercicio 11 JavaScript</h2>
+    <button onclick="min()">Aperta ai!!!</button>
+    <script>
+        function min(){
+            let A = prompt("Digite seu nome")
+            let B = parseFloat(prompt("Digite sua primeira nota:"))
+            let C = parseFloat(prompt("Digite sua segunda nota:"))
+            let D = parseFloat(prompt("Digite sua terceira nota:"))
+            let E = parseFloat(prompt("Digite sua quarta nota:"))
+            let F = (E + B + C + D) / 4
+            if (F >= 7){
+                window.alert(`Você foi aprovado ${A}`)
+            }
+            else{
+                window.alert(`Você foi reprovado ${A}`)
+            }
+        }
+    </script>
+    
+</body>
+</html>

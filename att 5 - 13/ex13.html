@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex13</title>
+</head>
+<body>
+    <h2 class="titulo">Exercicio 13 JavaScript</h2>
+    <button onclick="mano()">Aperta ai!!!</button>
+    <script>
+        function mano(){
+            let A = prompt("Digite seu nome:")
+            let B = parseInt(prompt("Digite sua idade"))
+            if(B >= 18){
+                window.alert(`${A} é maior de idade`)
+            }
+            if(B > 117){
+                window.alert("Idade inválida")
+            }
+            else{
+                window.alert(`${A} é menor de idade`)
+            }
+    }
+    </script>
+    
+</body>
+</html>

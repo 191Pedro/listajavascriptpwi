@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 11</title>
+    <link href="../att11/att.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="cg">
+        <nav>
+            <a href="../att10/att.html"><img src="../previous.png"> Atividade 10</a>
+            <span>|</span>
+            <a href="../index.html">Central de atividades <img src="../home.png"></a>
+            <span>|</span>
+            <a href="../att12/att.html">Atividade 12 <img src="../next.png"></a>
+        </nav>
+        <section>
+            <div class="enunciado">
+                <h3>Atividade 11</h3>
+                <p>Faça um algoritmo que leia quatro notas obtidas por um aluno, calcule a média das nota obtidas, imprima na tela o nome do aluno e se o aluno foi aprovado ou reprovado. Para o aluno ser considerado aprovado sua média final deve ser maior ou igual a 7.</p>
+            </div>
+            <div class="atividade">
+                <p>Insira quatro notas de um aluno e será calculada a média. Será informada a sua situação do aluno.</p>
+                <div class="nome">
+                    <input id="name" placeholder="Insira o nome do aluno">
+                </div>
+                <div>
+                    <input type="number" id="na" placeholder="Insira a primeira nota">
+                    <input type="number" id="nb" placeholder="Insira a segunda nota">
+                </div>
+                <div>
+                    <input type="number" id="nc" placeholder="Insira a terceira nota">
+                    <input type="number" id="nd" placeholder="Insira a quarta nota">
+                </div>
+            </div>
+            <div class="btt">
+                <button onclick="att()">Calcular</button>
+            </div>
+            <div class="text">
+                <p id="result">O resultado será exibido aqui</p><p id="resultmedia"></p><p id="result2"></p><p id="resultname"></p><p id="result3"></p><p id="resultsi"></p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+<script src="../att11/att.js"></script>

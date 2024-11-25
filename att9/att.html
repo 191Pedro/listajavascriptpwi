@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 9</title>
+    <link href="../att9/att.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="cg">
+        <nav>
+            <a href="../att8/att.html"><img src="../previous.png"> Atividade 8</a>
+            <span>|</span>
+            <a href="../index.html">Central de atividades <img src="../home.png"></a>
+            <span>|</span>
+            <a href="../att10/att.html">Atividade 10 <img src="../next.png"></a>
+        </nav>
+        <section id="sec">
+            <div class="imagem">
+                <img src="../previous.png" id="seta">
+            </div>
+            <div class="enunciado">
+                <h3>Atividade 9</h3>
+                <p>Faça um algoritmo que calcule o IMC (Índice de Massa Corporal) de uma pessoa, leia o seu peso e sua altura e imprima na tela sua condição.</p>
+            </div>
+            <div class="atividade">
+                <p>Calculadora IMC</p>
+                <div><input type="number" id="pv" placeholder="Insira seu peso"><span>Kg</span><img src="haltere.png" class="miniicon1"></div>
+                <div><input type="number" id="av" placeholder="Insira sua altura"><span>m</span><img src="regua.png" class="miniicon2"></div>
+            </div>
+            <div class="btt">
+                <button onclick="att()">Calcular</button>
+            </div>
+            <div class="text">
+                <p id="result2"></p><p id="result">O resultado será exibido aqui</p>
+            </div>
+        </section>
+        <div id="tabelaimc">
+            <h3>Tabela IMC</h3>
+            <p>Abaixo de 18,5 | <span class="aten1">Abaixo do peso</span></p>
+            <p>Entre 18,6 e 24,9 | <span class="aten0">Peso ideal</span></p>
+            <p>Entre 25,0 e 29,9 | <span class="aten1">Levemente acima do peso</span></p>
+            <p>Entre 30,0 e 34,9 | <span class="aten2">Obesidade grau I</span></p>
+            <p>Entre 35,0 e 39,9 | <span class="aten3">Obesidade grau II</span></p>
+            <p>Maior ou igual a 40 | <span class="aten4">Obesidade grau III</span></p>
+        </div>
+    </div>
+</body>
+</html>
+<script src="../att9/att.js"></script>
